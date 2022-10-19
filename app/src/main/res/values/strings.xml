@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Faceboke</string>
+    <string name="username">userName</string>
+    <string name="password">password</string>
+    <string name="login">login</string>
+    <string name="forget_password">forget password</string>
+    <string name="or">OR</string>
+    <string name="creat_new_account">creat new account</string>
+    <string name="enter_user_name">enter_user_name</string>
+    <string name="sahar">sahar</string>
+    <string name="hallo">hallo</string>
+    <string name="like">Like</string>
+    <string name="share">share</string>
+    <string name="comment">comment</string>
+    <string name="_12hrs">12hrs</string>
+    <string name="saharnayle">saharnayle</string>
+    <string name="gizapyramids">Gizapyramids</string>
+    <string name="nice">nice</string>
+    <string name="iiiiiii">iiiiiii</string>
+    <string name="ayanayle">Ayanayle</string>
+    <string name="maisaad">Maisaad</string>
+    <string name="roka_taha">Roka taha</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">home</string>
+    <string name="Gizapyramids">Gizapyramids</string>
+    <string name="_2hrs">2hrs</string>
+    <string name="dina_abdelsalam">Dina abdElsalam</string>
+</resources>

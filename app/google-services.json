@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "192877517218",
+    "project_id": "facebookfri-f4451",
+    "storage_bucket": "facebookfri-f4451.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192877517218:android:7f8425be6fcfeabd047afb",
+        "android_client_info": {
+          "package_name": "com.example.faceboke"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192877517218-ri20860scbr7blrj97t1nsmgd6e2jlrg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.faceboke",
+            "certificate_hash": "cc1a67159990a111e0a44995d0ff443dd338a5b6"
+          }
+        },
+        {
+          "client_id": "192877517218-hhv6r5knpojatg8ritcguq3ca0hp4jd1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfiDsOOSbO53SrWg32YRJV6Ii48peS_1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192877517218-hhv6r5knpojatg8ritcguq3ca0hp4jd1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
