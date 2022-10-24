@@ -1,5 +1,8 @@
 package com.example.faceboke.ui;
 
+import static com.example.faceboke.R.*;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -11,6 +14,7 @@ import androidx.viewpager2.widget.ViewPager2;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 
@@ -27,19 +31,16 @@ public class HomeActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home2);
+        setContentView(layout.activity_home2);
         initViewpager();
-
-
-
     }
 
     private void initViewpager() {
         viewPagerAdapter=new MainViewPagerAdapter(getSupportFragmentManager(),
            this.getLifecycle(),3);
-        mainViewPager=findViewById(R.id.view_pager);
+        mainViewPager=findViewById(id.view_pager);
         mainViewPager.setAdapter(viewPagerAdapter);
-        tabLayout=findViewById(R.id.tab_layout);
+        tabLayout=findViewById(id.tab_layout);
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
@@ -75,4 +76,6 @@ public class HomeActivity2 extends AppCompatActivity {
         super.onDestroy();
         mainViewPager.unregisterOnPageChangeCallback(onPageChangeCallback);
     }
+
+
 }

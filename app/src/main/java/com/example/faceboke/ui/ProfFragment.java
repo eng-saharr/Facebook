@@ -2,59 +2,40 @@ package com.example.faceboke.ui;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.faceboke.R;
+import com.example.faceboke.data.model.ProfModel;
+import com.example.faceboke.ui.adapter.ProfAdapter;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ProfFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+
+
 public class ProfFragment extends Fragment {
+    RecyclerView  ProfRecycler;
+    ArrayList<ProfModel> requests =new ArrayList<ProfModel>();
+    ProfAdapter profAdapter;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
     public ProfFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment ProfFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static ProfFragment newInstance(String param1, String param2) {
-        ProfFragment fragment = new ProfFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
     }
 
     @Override
@@ -62,5 +43,27 @@ public class ProfFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_prof, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        addFakedata(view);
+
+    }
+
+    private void addFakedata(View view) {
+      requests.add(new ProfModel("sahar",R.drawable.ev));
+      requests.add(new ProfModel("roaa",R.drawable.ko));
+        requests.add(new ProfModel("Dina",R.drawable.ko));
+        requests.add(new ProfModel("Walaa",R.drawable.ko));
+        requests.add(new ProfModel("Doaa",R.drawable.ko));
+        requests.add(new ProfModel("maha",R.drawable.ko));
+        requests.add(new ProfModel("Hagar",R.drawable.ko));
+        requests.add(new ProfModel("aya",R.drawable.ko));
+        ProfRecycler=view.findViewById(R.id.recycl_proff);
+        profAdapter=new ProfAdapter(requests);
+        ProfRecycler.setAdapter(profAdapter);
+        ProfRecycler.setLayoutManager(new LinearLayoutManager(requireContext()));
     }
 }
