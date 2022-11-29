@@ -15,8 +15,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.faceboke.R;
 import com.example.faceboke.ui.adapter.MainViewPagerAdapter;
@@ -35,9 +37,25 @@ public class HomeActivity2 extends AppCompatActivity {
         initViewpager();
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(@NonNull Menu menu) {
+        getMenuInflater().inflate(R.menu.opotin_menu_item,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == id.search){
+            Toast.makeText(this, "Search", Toast.LENGTH_SHORT).show();
+        } else if (item.getItemId() == id.messenger){
+            Toast.makeText(this, "Message", Toast.LENGTH_SHORT).show();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
     private void initViewpager() {
         viewPagerAdapter=new MainViewPagerAdapter(getSupportFragmentManager(),
-           this.getLifecycle(),3);
+           this.getLifecycle(),6);
         mainViewPager=findViewById(id.view_pager);
         mainViewPager.setAdapter(viewPagerAdapter);
         tabLayout=findViewById(id.tab_layout);

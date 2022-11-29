@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -18,6 +19,7 @@ public class ProfAdapter extends RecyclerView.Adapter<ProfAdapter.ProfHolder>{
     private List<ProfModel>requests;
 
     public ProfAdapter(List<ProfModel> requests) {
+
         this.requests = requests;
     }
 
@@ -26,7 +28,8 @@ public class ProfAdapter extends RecyclerView.Adapter<ProfAdapter.ProfHolder>{
     public ProfHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view= LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.item_prof_layout,parent,false);
-        return new ProfHolder(view);
+
+      return new ProfHolder(view);
     }
 
     @Override
@@ -39,18 +42,17 @@ public class ProfAdapter extends RecyclerView.Adapter<ProfAdapter.ProfHolder>{
 
     @Override
     public int getItemCount() {
-        if (requests != null)
+        if (requests!= null)
             return requests.size();
         return 0;
     }
 
     static class ProfHolder extends RecyclerView.ViewHolder {
         ImageView userImage;
-        EditText userName;
+        TextView userName;
 
         public ProfHolder(@NonNull View itemView) {
             super(itemView);
-
             userImage=itemView.findViewById(R.id.prof_img);
             userName=itemView.findViewById(R.id.prof_name);
 

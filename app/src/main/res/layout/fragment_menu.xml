@@ -1,14 +1,196 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#bebe"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.MenuFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/menu_img"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/ko"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/menu_name"
+        app:layout_constraintTop_toTopOf="@id/menu_img"
+        app:layout_constraintBottom_toBottomOf="@id/menu_img"
+        app:layout_constraintStart_toEndOf="@id/menu_img"
+        android:text="@string/saharnayle"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/menu_tex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20sdp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:layout_marginTop="24dp"
+        android:text=" see your profile"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintStart_toEndOf="@id/menu_img"
+        app:layout_constraintTop_toBottomOf="@id/menu_name"
+        app:layout_constraintTop_toTopOf="@id/menu_name" />
 
-</FrameLayout>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/menu_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/menu_img"
+        android:text="All shortcuts"
+        android:layout_margin="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        />
+ <androidx.appcompat.widget.AppCompatButton
+     android:id="@+id/bt1"
+     android:layout_width="@dimen/_100sdp"
+     android:layout_height="@dimen/_50sdp"
+     android:text="group"
+     android:backgroundTint="@color/white"
+     android:drawableTop="@drawable/ic__groups_24"
+     app:layout_constraintTop_toBottomOf="@id/menu_all"
+     app:layout_constraintStart_toStartOf="parent"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt2"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:backgroundTint="@color/white"
+        android:text="feed"
+        android:drawableTop="@drawable/ic_baseline_card_membership_24"
+        app:layout_constraintTop_toBottomOf="@id/bt1"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt3"
+        android:backgroundTint="@color/white"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:text="marketplace"
+        android:drawableTop="@drawable/ic_baseline_house_24"
+        app:layout_constraintTop_toBottomOf="@id/bt2"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt4"
+        android:layout_width="@dimen/_100sdp"
+        android:backgroundTint="@color/white"
+        android:layout_height="@dimen/_50sdp"
+        android:text="gaming"
+        android:drawableTop="@drawable/ic_baseline_dashboard_game"
+        app:layout_constraintTop_toBottomOf="@id/bt3"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt5"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:backgroundTint="@color/white"
+        android:layout_marginStart="32dp"
+        android:drawableTop="@drawable/ic_baseline_bookmark_24"
+        android:text="saved"
+        app:layout_constraintStart_toEndOf="@id/bt1"
+        app:layout_constraintTop_toBottomOf="@id/menu_all" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt6"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="32dp"
+        android:drawableTop="@drawable/icon_friends"
+        android:backgroundTint="@color/white"
+        android:text="friends"
+        app:layout_constraintStart_toEndOf="@id/bt2"
+        app:layout_constraintTop_toBottomOf="@id/bt5" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt7"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:backgroundTint="@color/white"
+        android:layout_marginStart="32dp"
+        android:drawableTop="@drawable/icon__ondemand_video_"
+        android:text="videos"
+        app:layout_constraintStart_toEndOf="@id/bt3"
+        app:layout_constraintTop_toBottomOf="@id/bt6" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt8"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="32dp"
+        android:drawableTop="@drawable/ic_baseline_flag_24"
+        android:backgroundTint="@color/white"
+        android:text="pages"
+        app:layout_constraintStart_toEndOf="@id/bt4"
+        app:layout_constraintTop_toBottomOf="@id/bt7" />
+
+    <Button
+        android:id="@+id/see"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bt4"
+        android:text="see more"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:layout_margin="10dp"/>
+    <Button
+        android:id="@+id/community"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/see"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:backgroundTint="@color/white"
+        android:text="community resources"
+        android:textColor="@color/black"
+        android:textSize="10dp"/>
+    <Button
+        android:id="@+id/help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/community"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:backgroundTint="@color/white"
+        android:text="help &amp; support"
+        android:textColor="@color/black"
+        android:textSize="10dp"/>
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/help"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:backgroundTint="@color/white"
+        android:text="settings &amp; privacy"
+        android:textColor="@color/black"
+        android:textSize="10dp"/>
+    <Button
+        android:id="@+id/log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/settings"
+        android:text="log out"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:layout_margin="10dp"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

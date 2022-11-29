@@ -3,20 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/A/AndroidStudioProjects/Faceboke/app/src/main/res/layout/activity_home2.xml" value="0.22" />
-        <entry key="..\:/Users/A/AndroidStudioProjects/Faceboke/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/A/AndroidStudioProjects/Faceboke/app/src/main/res/drawable/ic__groups_24.xml" value="0.1865" />
+        <entry key="..\:/Users/A/AndroidStudioProjects/Faceboke/app/src/main/res/drawable/iconp_bookmark_24.xml" value="0.1285" />
+        <entry key="..\:/Users/A/AndroidStudioProjects/Faceboke/app/src/main/res/layout/activity_home2.xml" value="0.25" />
+        <entry key="..\:/Users/A/AndroidStudioProjects/Faceboke/app/src/main/res/layout/activity_main.xml" value="0.15" />
         <entry key="..\:/Users/A/AndroidStudioProjects/Faceboke/app/src/main/res/layout/activity_splash2.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/A/AndroidStudioProjects/Faceboke/app/src/main/res/layout/fragment_4.xml" value="0.19947916666666668" />
         <entry key="..\:/Users/A/AndroidStudioProjects/Faceboke/app/src/main/res/layout/fragment_home1.xml" value="0.19947916666666668" />
-        <entry key="..\:/Users/A/AndroidStudioProjects/Faceboke/app/src/main/res/layout/fragment_menu.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/A/AndroidStudioProjects/Faceboke/app/src/main/res/layout/fragment_menu.xml" value="0.25" />
         <entry key="..\:/Users/A/AndroidStudioProjects/Faceboke/app/src/main/res/layout/fragment_notefication.xml" value="0.19947916666666668" />
         <entry key="..\:/Users/A/AndroidStudioProjects/Faceboke/app/src/main/res/layout/fragment_post.xml" value="0.10454545454545454" />
         <entry key="..\:/Users/A/AndroidStudioProjects/Faceboke/app/src/main/res/layout/fragment_postt.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/A/AndroidStudioProjects/Faceboke/app/src/main/res/layout/fragment_prof.xml" value="0.19947916666666668" />
         <entry key="..\:/Users/A/AndroidStudioProjects/Faceboke/app/src/main/res/layout/fragment_vedio.xml" value="0.18541666666666667" />
         <entry key="..\:/Users/A/AndroidStudioProjects/Faceboke/app/src/main/res/layout/item_home1_layout.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/A/AndroidStudioProjects/Faceboke/app/src/main/res/layout/item_notefication_layout.xml" value="0.22" />
         <entry key="..\:/Users/A/AndroidStudioProjects/Faceboke/app/src/main/res/layout/item_post_layout.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/A/AndroidStudioProjects/Faceboke/app/src/main/res/layout/item_prof_layout.xml" value="0.25" />
+        <entry key="..\:/Users/A/AndroidStudioProjects/Faceboke/app/src/main/res/layout/item_prof_layout.xml" value="0.22" />
         <entry key="..\:/Users/A/AndroidStudioProjects/Faceboke/app/src/main/res/menu/opotin_menu_item.xml" value="0.203125" />
       </map>
     </option>

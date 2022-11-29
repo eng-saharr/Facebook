@@ -55,12 +55,12 @@ public class ProfFragment extends Fragment {
     private void addFakedata(View view) {
       requests.add(new ProfModel("sahar",R.drawable.ev));
       requests.add(new ProfModel("roaa",R.drawable.ko));
-        requests.add(new ProfModel("Dina",R.drawable.ko));
-        requests.add(new ProfModel("Walaa",R.drawable.ko));
-        requests.add(new ProfModel("Doaa",R.drawable.ko));
-        requests.add(new ProfModel("maha",R.drawable.ko));
-        requests.add(new ProfModel("Hagar",R.drawable.ko));
-        requests.add(new ProfModel("aya",R.drawable.ko));
+        requests.add(new ProfModel("Dina",R.drawable.rr));
+        requests.add(new ProfModel("Walaa",R.drawable.kk));
+        requests.add(new ProfModel("Doaa",R.drawable.aa));
+        requests.add(new ProfModel("maha",R.drawable.fb));
+        requests.add(new ProfModel("Hagar",R.drawable.img));
+        requests.add(new ProfModel("aya",R.drawable.ip));
         ProfRecycler=view.findViewById(R.id.recycl_proff);
         profAdapter=new ProfAdapter(requests);
         ProfRecycler.setAdapter(profAdapter);
